@@ -17,7 +17,7 @@ let correctB = false;
 let correctC = false;
 while (!correctA) {
     var a = prompt('Please enter a');
-    if (a === parseInt(a, 10) || parseFloat(a)) {
+    if (a === parseInt(a, 10) || parseFloat(a) && a !== 0) {
         correctA = true;
     }
     else {
